@@ -17,10 +17,10 @@ const proData = [
   {
     id: 2,
     imgSrc: './images/image 20.png',
-    name: 'Microsoft Surface Go',
+    name: 'Boat Surface Go',
     price: 399.00,
-    brand: 'Microsoft',
-    color: 'Silver'
+    brand: 'Boat',
+    color: 'Blue'
   },
   {
     id: 3,
@@ -28,14 +28,14 @@ const proData = [
     name: 'Samsung Galaxy S22 Ultra',
     price: 1350.00,
     brand: 'Samsung',
-    color: 'White'
+    color: 'Red'
   },
   {
     id: 4,
     imgSrc: './images/image 24.png',
-    name: 'Panasonic Lumix DC-GH5 II',
+    name: 'Canon Lumix DC-GH5 II',
     price: 1500.00,
-    brand: 'Panasonic',
+    brand: 'Canon',
     color: 'Black'
   },
   {
@@ -44,7 +44,7 @@ const proData = [
     name: 'Fossil Gen 6 Smart Watch',
     price: 450.00,
     brand: 'Fossil',
-    color: 'Brown'
+    color: 'Blue'
   },
   {
     id: 6,
@@ -76,7 +76,7 @@ const proData = [
     name: 'Apple iPad Mini 6 Wi-Fi',
     price: 500.00,
     brand: 'Apple',
-    color: 'Gray'
+    color: 'Orange'
   },
   {
     id: 10,
@@ -89,9 +89,9 @@ const proData = [
   {
     id: 11,
     imgSrc: './images/image 17.png',
-    name: 'Bose QuietComfort 45',
+    name: 'Canon QuietComfort 45',
     price: 300.00,
-    brand: 'Bose',
+    brand: 'Canon',
     color: 'Black'
   },
   {
@@ -108,30 +108,30 @@ const proData = [
     name: 'Samsung Galaxy Tab A8',
     price: 250.00,
     brand: 'Samsung',
-    color: 'Silver'
+    color: 'Green'
   },
   {
     id: 14,
     imgSrc: './images/image 35.png',
-    name: 'Sony Bravia Smart TV',
+    name: 'Dell Bravia Smart TV',
     price: 1500.00,
-    brand: 'Sony',
+    brand: 'Dell',
     color: 'Black'
   },
   {
     id: 15,
     imgSrc: './images/image 17.png',
-    name: 'Bose QuietComfort 45',
+    name: 'Dell QuietComfort 45',
     price: 300.00,
-    brand: 'Bose',
+    brand: 'Dell',
     color: 'Black'
   },
   {
     id: 16,
     imgSrc: './images/image 19.png',
-    name: 'Bose QuietComfort 45',
+    name: 'Canon QuietComfort 45',
     price: 300.00,
-    brand: 'Bose',
+    brand: 'Canon',
     color: 'Black'
   },
   {
@@ -156,7 +156,7 @@ const proData = [
     name: 'Asus ROG Delta S',
     price: 250.00,
     brand: 'Asus',
-    color: 'Black'
+    color: 'Yellow'
   },
   {
     id: 20,
@@ -177,10 +177,178 @@ const proData = [
   {
     id: 22,
     imgSrc: './images/image 17.png',
+    name: 'Dell QuietComfort 45',
+    price: 300.00,
+    brand: 'Dell',
+    color: 'Blue'
+  },
+  {
+    id: 23,
+    imgSrc: './images/image 20.png',
+    name: 'Boat Surface Go',
+    price: 399.00,
+    brand: 'Boat',
+    color: 'Blue'
+  },
+  {
+    id: 24,
+    imgSrc: './images/image 18.png',
+    name: 'Samsung Galaxy S22 Ultra',
+    price: 1350.00,
+    brand: 'Samsung',
+    color: 'Red'
+  },
+  {
+    id: 25,
+    imgSrc: './images/image 24.png',
+    name: 'Fossil Lumix DC-GH5 II',
+    price: 1500.00,
+    brand: 'Fossil',
+    color: 'Black'
+  },
+  {
+    id: 26,
+    imgSrc: './images/image 28.png',
+    name: 'Fossil Gen 6 Smart Watch',
+    price: 450.00,
+    brand: 'Fossil',
+    color: 'Blue'
+  },
+  {
+    id: 27,
+    imgSrc: './images/image 21.png',
+    name: 'LG 4K Ultra UHD TV',
+    price: 5500.00,
+    brand: 'LG',
+    color: 'Black'
+  },
+  {
+    id: 28,
+    imgSrc: './images/image 22.png',
+    name: 'Apple iPhone 14 Plus',
+    price: 850.00,
+    brand: 'Apple',
+    color: 'Red'
+  },
+  {
+    id: 29,
+    imgSrc: './images/image 25.png',
+    name: 'Asus ROG Delta S',
+    price: 250.00,
+    brand: 'Asus',
+    color: 'Black'
+  },
+  {
+    id: 30,
+    imgSrc: './images/image 19.png',
+    name: 'Apple iPad Mini 6 Wi-Fi',
+    price: 500.00,
+    brand: 'Apple',
+    color: 'Orange'
+  },
+  {
+    id: 31,
+    imgSrc: './images/image 26.png',
+    name: 'Xiaomi Fimi X8 Mini',
+    price: 650.00,
+    brand: 'Xiaomi',
+    color: 'White'
+  },
+  {
+    id: 32,
+    imgSrc: './images/image 17.png',
+    name: 'Canon QuietComfort 45',
+    price: 300.00,
+    brand: 'Canon',
+    color: 'Black'
+  },
+  {
+    id: 33,
+    imgSrc: './images/image 33.png',
+    name: 'ASUS ZenBook Pro 15 Flip',
+    price: 2300.00,
+    brand: 'Asus',
+    color: 'Blue'
+  },
+  {
+    id: 34,
+    imgSrc: './images/image 34 (1).png',
+    name: 'Samsung Galaxy Tab A8',
+    price: 250.00,
+    brand: 'Samsung',
+    color: 'Green'
+  },
+  {
+    id: 35,
+    imgSrc: './images/image 35.png',
+    name: 'Hp Bravia Smart TV',
+    price: 1500.00,
+    brand: 'Hp',
+    color: 'Black'
+  },
+  {
+    id: 36,
+    imgSrc: './images/image 17.png',
+    name: 'Dell QuietComfort 45',
+    price: 300.00,
+    brand: 'Dell',
+    color: 'Black'
+  },
+  {
+    id: 37,
+    imgSrc: './images/image 19.png',
     name: 'Bose QuietComfort 45',
     price: 300.00,
     brand: 'Bose',
     color: 'Black'
+  },
+  {
+    id: 38,
+    imgSrc: './images/image 21.png',
+    name: 'LG 4K Ultra UHD TV',
+    price: 5500.00,
+    brand: 'LG',
+    color: 'Black'
+  },
+  {
+    id: 39,
+    imgSrc: './images/image 22.png',
+    name: 'Apple iPhone 14 Plus',
+    price: 850.00,
+    brand: 'Apple',
+    color: 'Red'
+  },
+  {
+    id: 40,
+    imgSrc: './images/image 25.png',
+    name: 'Asus ROG Delta S',
+    price: 250.00,
+    brand: 'Asus',
+    color: 'Yellow'
+  },
+  {
+    id: 41,
+    imgSrc: './images/image 19.png',
+    name: 'Apple iPad Mini 6 Wi-Fi',
+    price: 500.00,
+    brand: 'Apple',
+    color: 'Gray'
+  },
+  {
+    id: 42,
+    imgSrc: './images/image 26.png',
+    name: 'Xiaomi Fimi X8 Mini',
+    price: 650.00,
+    brand: 'Xiaomi',
+    color: 'White'
+  },
+  {
+    id: 43,
+    imgSrc: './images/image 17.png',
+    name: 'Boat QuietComfort 45',
+    price: 300.00,
+    brand: 'Boat',
+    color: 'Blue'
   },
 ];
 
