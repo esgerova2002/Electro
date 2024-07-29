@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Success from "./components/Success";
+import ProductDetail from "./components/Productdetail";
 import "./App.css";
 import Register from "./components/Register";
 
@@ -42,6 +43,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/product/:productId" element={<ProductDetail />} />
       </Routes>
       <Footer />
       {modalType === "login" && (

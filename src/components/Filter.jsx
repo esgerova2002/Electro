@@ -2,7 +2,7 @@ import React, { useState, useCallback } from 'react';
 import '../styles/Filter.css';
 import { SlArrowDown } from "react-icons/sl";
 
-function Filter({ onFilterChange }) {
+function Filter({ onFilterChange, proData = [] }) { // Default value is an empty array
   const [openSections, setOpenSections] = useState({
     cat: false,
     price: false,
@@ -42,6 +42,13 @@ function Filter({ onFilterChange }) {
     );
     onFilterChange('color', color);
   };
+
+  // Check if proData is not undefined and has length
+  const brandCounts = proData.reduce((counts, product) => {
+    counts[product.brand] = (counts[product.brand] || 0) + 1;
+    return counts;
+  }, {});
+
 
   return (
     <div className='procatdir'>
@@ -94,7 +101,7 @@ function Filter({ onFilterChange }) {
                       onChange={() => handleBrandChange(brand)}
                     />
                     <label htmlFor={brand}>{brand}</label>
-                    <span>({Math.floor(Math.random() * 20) + 1})</span> {/* Sample counts, replace with actual data */}
+                    <span>({brandCounts[brand] || 0})</span>
                   </div>
                 ))}
               </div>
@@ -125,7 +132,6 @@ function Filter({ onFilterChange }) {
                       <div className={`color-box ${color.toLowerCase()}`}></div>
                       <span>{color}</span>
                     </label>
-                    <span>({Math.floor(Math.random() * 20) + 1})</span> {/* Sample counts, replace with actual data */}
                   </div>
                 ))}
               </div>
