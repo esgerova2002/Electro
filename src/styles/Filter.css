@@ -1,0 +1,120 @@
+.procatdir{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.pdown {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.catitle{
+  color: #101316;
+font-size: 18px;
+font-weight: 700;
+line-height: 30px;
+}
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.selectF {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.checkF {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #101316;
+  border-radius: 4px;
+}
+
+.red, .black, .blue, .yellow, .green, .orange {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+.red {
+  background: #E15353;
+}
+
+.black {
+  background-color: #101316;
+}
+
+.blue {
+  background-color: #5553E1;
+}
+
+.yellow {
+  background-color: #E1D353;
+}
+
+.green {
+  background-color: #A3D139;
+}
+
+.orange {
+  background-color: #E1A053;
+}
+
+.optionFcard {
+  display: flex;
+  align-items: center;
+  gap:10px;
+  cursor: pointer;
+}
+.optionFcard label{
+  display: flex;
+}
+
+.color-checkbox {
+  display: none;
+}
+
+.color-checkbox.red + label .color-box {
+  background-color: #E15353;
+}
+
+.color-checkbox.black + label .color-box {
+  background-color: #101316;
+}
+
+.color-checkbox.blue + label .color-box {
+  background-color: #5553E1;
+}
+
+.color-checkbox.yellow + label .color-box {
+  background-color: #E1D353;
+}
+
+.color-checkbox.green + label .color-box {
+  background-color: #A3D139;
+}
+
+.color-checkbox.orange + label .color-box {
+  background-color: #E1A053;
+}
+
+.color-box {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+input[type="checkbox"]:checked + label .color-box {
+  border: 2px solid #000;
+}

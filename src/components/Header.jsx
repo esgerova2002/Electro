@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { FaSearch, FaRegHeart } from "react-icons/fa";
 import { SlArrowDown } from "react-icons/sl";
@@ -7,18 +7,6 @@ import { AiOutlineMenu } from "react-icons/ai";
 import "../styles/Header.css";
 
 const Header = ({ onLoginClick }) => {
-  const [dropdownVisible, setDropdownVisible] = useState(false);
-
-  const handleMouseEnter = () => {
-    setDropdownVisible(true);
-  };
-
-  const handleMouseLeave = () => {
-    setTimeout(() => {
-      setDropdownVisible(false);
-    }, 300);
-  };
-
   return (
     <header className="container">
       <div className="headerTop">
@@ -71,23 +59,8 @@ const Header = ({ onLoginClick }) => {
             <li>
               <Link to="/">Home</Link>
             </li>
-            <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              <Link to="/shop">
-                Shop <SlArrowDown />
-              </Link>
-              {dropdownVisible && (
-                <ul className="dropdown">
-                  <li>
-                    <Link to="/shop/category1">Category 1</Link>
-                  </li>
-                  <li>
-                    <Link to="/shop/category2">Category 2</Link>
-                  </li>
-                  <li>
-                    <Link to="/shop/category3">Category 3</Link>
-                  </li>
-                </ul>
-              )}
+            <li>
+              <Link to="/shop">Shop</Link>
             </li>
             <li>
               <Link to="/about">About Us</Link>
@@ -106,3 +79,4 @@ const Header = ({ onLoginClick }) => {
 };
 
 export default Header;
+

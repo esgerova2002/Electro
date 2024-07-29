@@ -1,4 +1,5 @@
 .headerTop {
+  width: 100%;
   display: grid;
   grid-template-columns: 178.5px 1fr 1fr;
   gap: 40px;
@@ -147,29 +148,6 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #1C4E8E;
-}
-
-.dropdown {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.3s ease, visibility 0.3s;
-}
-
-nav ul li:hover .dropdown {
-  display: block;
-  opacity: 1;
-}
-
-.dropdown li {
-  padding: 8px 16px;
-}
-
-.dropdown li a {
-  color: #000;
 }
 
 .cart-icon-wrapper {
